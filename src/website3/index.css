@@ -1,16 +1,9 @@
-.wrapper {
-  background: #e0eafc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #cfdef3,
-    #e0eafc
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #cfdef3,
-    #e0eafc
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+body {
+  background-color: white;
 }
 li {
   position: relative;
@@ -26,7 +19,7 @@ li::after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #b6bcbe;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -439,10 +432,10 @@ button {
   /* padding-right: 3em; */
 }
 @media only screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
+  .wrapper {
+    max-width: 400px;
+    overflow-x: hidden;
   }
-
   .menuicon {
     display: block;
   }
@@ -460,6 +453,8 @@ button {
   .cards {
     flex-direction: column;
     width: 300px;
+    padding-left: 0;
+    margin-left: 0;
     /* height: 500px; */
   }
   .part4 {
